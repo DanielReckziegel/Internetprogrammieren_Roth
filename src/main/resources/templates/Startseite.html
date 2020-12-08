@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Home</title>
+	<link th:href="@{/css/style.css}" rel="stylesheet" >
+</head>
+<body>
+
+<div class="container">
+	<header>
+		<h1>Podlike</h1>
+	</header>
+
+	<nav>
+		<h2>
+			<a th:href="@{/home}" class ="navlink">Home</a> |
+			<a href="" class ="navlink">Podcast</a> |
+			<a href="" class ="navlink">Podcaster</a> |
+			<a th:href="@{/login}" class ="navlink">Login</a> |
+		</h2>
+	</nav>
+
+	<section class="BoxSection">
+		<h3>Hier finden Sie alle Podcasts die es bei uns gibt</h3>
+
+		<div>
+			<figure id="gallery">
+				<figure>
+					<img src="/images/cover_1.jpg" height="200" width="200"/>
+				 	<figcaption><a class ="podLink" th:href="@{/Podcast1}">Podcast 1 </a></figcaption>
+				</figure>
+				<figure>
+					<img src="/images/cover_2.jpg" height="200" width="200" />
+					<figcaption><a class ="podLink" href="Podcast1.html">Podcast 2 </a></figcaption>
+				</figure>
+				<figure>
+					<img src="/images/cover_3.jpg" height="200" width="200" />
+					<figcaption><a class ="podLink" href="Podcast1.html">Podcast 3 </a></figcaption>
+				</figure>
+				<figure>
+					<img src="/images/cover_4.jpg" height="200" width="200" />
+					<figcaption><a class ="podLink" href="Podcast1.html">Podcast 4 </a></figcaption>
+				</figure>
+				<figure>
+					<img src="/images/cover_5.jpg" height="200" width="200" />
+					<figcaption><a class ="podLink" href="Podcast1.html">Podcast 5 </a></figcaption>
+				</figure>
+				<figure>
+					<img src="/images/cover_6.jpg" height="200" width="200" />
+					<figcaption><a class ="podLink" href="Podcast1.html">Podcast 6 </a></figcaption>
+				</figure>
+			</figure>
+		</div>
+		</div>
+
+
+	</section>
+	<div class="clear">
+	</div>
+</div>
+</body>
+</html>

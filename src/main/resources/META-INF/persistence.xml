@@ -1,0 +1,38 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+    version="2.0">
+    <persistence-unit name="podlike">
+        <description>
+            Persistence unit for the podlike project
+        </description>
+        <properties>
+
+            <!-- Klassenname des JDBC Triebers, der verwendet werden soll (muss zur Laufzeit verfügbar sein) -->
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+
+            <!-- JDBC Connection URL (DB-Treiber, Host, Port, und Datenbank in der URL kodiert) -->
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://pgdb.wannaco.de:4711/u3" />
+
+            <!-- Datenbank-Benutzer für die Anmeldung an der DB -->
+            <property name="javax.persistence.jdbc.user" value="u3" />
+
+            <!-- Passwort für den Datenbank-Benutzer  -->
+            <property name="javax.persistence.jdbc.password" value="x83YhW2(WsmA_s" />
+
+            <!-- Konfiguriert Hibernate als O/R-Mapper und gibt an, welcher Datenbank-Hersteller / Version verwendet wird -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL10Dialect"/>
+
+            <!-- Schaltet die Ausgabe der SQL-Befehle während der Ausführung der APP ein -->
+            <property name="hibernate.show_sql" value="true" />
+
+            <!-- Schaltet das Feature ein, das die Entity-Klassen mit den DB-Schema beim Start abgleicht
+
+             und automatisch das DB-Schema synchonisiert -->
+            <property name="hibernate.hbm2ddl.auto" value="update" />
+
+            <!-- richtet das DB-Schema, das verwendet werden soll, ein  -->
+            <property name="hibernate.default_schema" value="podlike"/>
+        </properties>
+    </persistence-unit>
+</persistence>
