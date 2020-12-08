@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class MyServer {
     public static void main(String[] args) {
-        Javalin javalin = Javalin.create().start(8080);
+        Javalin javalin = Javalin.create().start(8082);
         javalin.get("/hello", ctx -> {
             String name = ctx.queryParam("name", "World");
             ctx.result("Hello "+name+"!");
