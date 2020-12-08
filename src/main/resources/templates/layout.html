@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Login</title>
+	<link th:href="@{/css/style.css}" rel="stylesheet" >
+    <script type = "text/javascript" th:src = "@{/js/actions.js}"></script>
+</head>
+<body>
+  <div class="container">
+  	   <header>
+  	   	  <h1>Podlike</h1>
+  	   </header>
+  	   <nav>
+  	   	  <h2>
+              <a href="" class ="navlink">Home</a> |
+              <a href="" class ="navlink">Podcast</a> |
+              <a href="" class ="navlink">Podcaster</a> |
+              <a href="" class ="navlink">Login</a> | 
+           </h2>
+  	   </nav>
+  	   <section class="BoxSection">
+  	   	  <h3>Bitte melden Sie sich an. Falls Sie noch keinen Account haben, k&oumlnnen Sie sich hier registrieren.</h3>
+           <div class="content">
+  	   	   	   <div class="left">
+  	   	   	   	  <div class="card">
+                      <h4>Login as User</h4> <br>
+  	   	   	   	  	 <form>
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" >
+                        <br>
+                         <label for="password">Password</label>
+                        <input type="password" id="password" name="password">
+                    </form>
+                      <input type="button" class="button" value="Login">
+                      <br><br>
+                      <a href="" class ="reglink">Registrieren</a>
+  	   	   	   	  </div>
+  	   	   	   </div>
+  	   	   	   <div class="right">
+  	   	   	   	  <div class="card">
+  	   	   	   	  	 <h4>Login as Podcaster</h4> <br>
+  	   	   	   	  	 <form>
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" >
+                        <br>
+                         <label for="password">Password</label>
+                        <input type="password" id="password" name="password" >
+                    </form>
+                      <input type="button" class="button" value="Login">
+                      <br><br>
+                      <a href="" class ="reglink">Registrieren</a>
+  	   	   	   	  </div>
+  	   	   	   </div>
+  	   	   </div>
+  	   </section>
+  	   <div class="clear">
+  	   </div>
+  </div>
+</body>
+</html>

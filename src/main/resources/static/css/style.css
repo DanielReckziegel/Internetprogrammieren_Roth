@@ -1,0 +1,199 @@
+/* Hintergrund hinter der Box + Schriftart */
+body{
+	margin:0;
+	font-family: monospace;
+	background-color: #e7f7f8;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.container{
+	max-width: 1140px;
+	background-color: #8fd9e0;
+	height: auto;
+	margin:20px auto;
+	padding:20px;
+}
+
+/* Schriftgröße "Podlike" */
+h1{
+	font-size:50px;
+	margin:0;
+    color: #35afbb;
+}
+
+/* Schriftgröße Nav Bar */
+h2{
+	font-size:20px;
+	margin:0;
+    color: #35afbb;
+}
+
+/* Schriftgröße Text in Box "Bitte melden Sie sich an..." */
+h3{
+	font-size:15px;
+	margin:0;
+    color: #35afbb;
+}
+
+/* Überschrift "Login as User/Podcaster" */
+h4{
+	font-size:20px;
+	margin:0;
+    color: white;
+}
+
+
+.clear{
+	clear: both;
+}
+
+/* Header -> Podlike */
+header{
+ float:left;
+ width: 100%;
+ background-color:#e7f7f8; 
+ text-align: center;
+ padding:30px 15px;
+ margin-bottom:20px;
+}
+
+/* Navigation Bar -> Home Podcast Podcaster Login */
+nav{
+ float:left;
+ width: 100%;
+ background-color:#e7f7f8; 
+ text-align: center;
+ padding:10px 15px;
+ margin-bottom:20px;
+}
+
+ /* Link Effekte (Navbar) */
+.navlink:link {
+    color: #35afbb;
+    text-decoration: none;
+}
+
+/* visited link */
+.navlink:visited {
+    color: #35afbb;
+    text-decoration: none;
+}
+
+/* mouse over link */
+.navlink:hover {
+    color: #24777f;
+    text-decoration: underline;
+}
+
+/* selected link */
+.navlink:active {
+    color: #1d6167;
+    text-decoration: underline;
+} 
+
+ /* Link Effekte (Registrieren) */
+.reglink:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* visited link */
+.reglink:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* mouse over link */
+.reglink:hover {
+    color: #24777f;
+    text-decoration: underline;
+}
+
+/* selected link */
+.reglink:active {
+    color: #1d6167;
+    text-decoration: underline;
+} 
+
+/* Login Boxen -> Login as User und Login as Podcaster */
+.BoxSection{
+ float:left;
+ width: 100%;
+ background-color:#e7f7f8; 
+ text-align: center;
+ padding:50px 10px;
+ margin-bottom:0px;
+}
+
+.BoxSection .content{
+float: left;
+width: 100%;
+margin-top:60px;
+}
+
+.BoxSection .content .left{
+	width: 50%;
+	float: left;
+	padding:0px 10px;
+
+}
+.BoxSection .content .left .card{
+	padding:100px 15px;
+	font-size:20px;
+	color:#fff;
+	background-color: #74cfd8;
+}
+.BoxSection .content .right{
+	width: 50%;
+	float: left;
+	padding: 0px 10px;
+}
+.BoxSection .content .right .card{
+	padding:100px 15px;
+	font-size:20px;
+	color:#fff;
+	background-color: #74cfd8;
+	margin-bottom:20px;
+}
+
+/* Textfeld Username */ 
+input[type=text] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+/* Textfeld Passwort */
+input[type=password] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+/* Login Button */
+.button {
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+

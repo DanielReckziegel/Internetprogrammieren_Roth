@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="de" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>My First Thymeleaf Site</title>
+</head>
+<body>
+<section id="body">
+    <ul>
+        <li th:each="p : ${fruits}"><span class="user" th:text="${p}">Dummy</span></li>
+    </ul>
+</section>
+</body>
+</html>
